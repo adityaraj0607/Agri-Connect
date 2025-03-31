@@ -1,0 +1,111 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset & Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+    overflow: hidden;
+}
+
+/* Particles.js Background */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Glassmorphism Login Box */
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 255, 170, 0.3);
+    text-align: center;
+    width: 350px;
+    color: white;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Title */
+h2 {
+    font-weight: bold;
+    color: #00FFAA;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #00FFAA;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+}
+
+/* Floating Labels */
+.input-group label {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    font-size: 14px;
+    color: #bbb;
+    transition: all 0.3s ease;
+}
+
+/* Floating Effect */
+.input-group input:focus + label,
+.input-group input:valid + label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #00FFAA;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00FFAA;
+    color: #1e1e2e;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00D1A0;
+    transform: scale(1.05);
+}
+
+/* Sign Up Link */
+.signup {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #00FFAA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
